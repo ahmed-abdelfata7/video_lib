@@ -34,8 +34,11 @@ export class VideosComponent implements OnInit {
   ]
 
   constructor() { }
-
+  selectedVideo: Video;
   ngOnInit() {
   }
-
+  onVideoSelected(video: any) {
+    this.selectedVideo = video;
+    console.log(this.selectedVideo);
+  }
 }
