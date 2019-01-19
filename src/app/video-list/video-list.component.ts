@@ -15,6 +15,7 @@ export class VideoListComponent implements OnInit {
   ngOnInit() {
   }
   onSelect(video: Video) {
+    video.url = video.url.replace("watch?v=", "embed/");
     this.selectedVideo.emit(video);
   }
 

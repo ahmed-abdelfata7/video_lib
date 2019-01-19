@@ -10,6 +10,7 @@ import { NavComponent } from './nav/nav.component';
 import { AboutComponent } from './about/about.component';
 import { VideoListComponent } from './video-list/video-list.component';
 import { VideoDetailsComponent } from './video-details/video-details.component';
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { VideoDetailsComponent } from './video-details/video-details.component';
     NavComponent,
     AboutComponent,
     VideoListComponent,
-    VideoDetailsComponent
+    VideoDetailsComponent,
+    SafePipe
   ],
   imports: [
     BrowserModule,
